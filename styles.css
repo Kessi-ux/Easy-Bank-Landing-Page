@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(220, 16%, 96%)
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    
+}
