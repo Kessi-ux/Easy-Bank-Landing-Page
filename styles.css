@@ -59,9 +59,11 @@ html {
 
 body{
     /* background: hsl(220, 16%, 96%); */
-    font-family: sans-serif;
+    font-family: "Rubik", "Inter", sans-serif;
     line-height: 1;
     font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
     color: #555;
 }
 
@@ -105,20 +107,46 @@ li, a, button {
     border-bottom: black 2px solid;
 }
 
-button, .btn{
+/* button{
     padding: 10px 24px;
     border-radius: 20px;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+} */
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    background-color: hsl(192, 70%, 51%);
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.2rem 2.4rem;
+    border-radius: 150px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: hsl(136, 65%, 51%);
+}
+
+.section-hero{
+    background-color: hsl(0, 0%, 98%);
+    padding: 9.6rem 0;
 }
 
 .hero{
     max-width: 130rem;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 9.6rem;
+    margin: 0 auto;
+    padding: 0 5%;
 }
 
 .heading-primary{
@@ -131,7 +159,7 @@ button, .btn{
 }
 
 .hero-description{
-    font-family: 2rem;
+    font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 4.8rem;
 }
@@ -153,5 +181,65 @@ button, .btn{
     left: 50%;
     transform: translateX(-50%);
     width: 82%;
+}
+
+.section-why-choose-us{
+    background-color: hsl(220, 16%, 96%);
+    padding: 9.6rem 0;
+}
+
+.why-choose-us{
+    max-width: 130rem;
+    
+    padding: 0 5%;
+}
+
+.heading-secondary{
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.05;
+    color: #333;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+}
+
+.why-choose-us-description{
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+    max-width: 65%;
+}
+
+.section-card{
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+}
+
+.icon {
+    margin-bottom: 10px;
+}
+
+.section-card .card h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section-card .card p {
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 1.5;
+    max-width: 95%
 }
 
